@@ -1,12 +1,14 @@
 const { remote } = require('webdriverio');
 const { Eyes } = require('@applitools/eyes-webdriverio'); 
-// 👆 used ONLY to fetch Execution Cloud URL
+
 
 describe('WDIO Execution Cloud WITHOUT Eyes', () => {
   let driver;
 
   beforeEach(async () => {
     const ecUrl = new URL(await Eyes.getExecutionCloudUrl());
+
+    console.log('Execution Cloud URL:', ecUrl.toString());
 
     driver = await remote({
       protocol: ecUrl.protocol.replace(':', ''),

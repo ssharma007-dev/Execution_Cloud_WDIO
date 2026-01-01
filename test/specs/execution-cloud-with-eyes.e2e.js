@@ -22,7 +22,6 @@ describe('WDIO Execution Cloud with Eyes', () => {
     config.setApiKey(process.env.APPLITOOLS_API_KEY);
     eyes.setConfiguration(config);
 
-    // 🔑 Create Execution Cloud session manually
     const executionCloudUrl = new URL(await Eyes.getExecutionCloudUrl());
     const protocol = executionCloudUrl.protocol.replace(':', '');
 
