@@ -1,0 +1,27 @@
+{
+  "name": "executioncloud_wdio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@applitools/eyes-webdriverio": "^5.50.2",
+    "@wdio/cli": "^8.10.2",
+    "@wdio/dot-reporter": "^8.10.2",
+    "chai": "^4.3.10",
+    "chromedriver": "120.0.0",
+    "wdio-chromedriver-service": "^8.1.1",
+    "webdriverio": "^8.10.2"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^9.22.0",
+    "@wdio/mocha-framework": "^9.22.0",
+    "@wdio/spec-reporter": "^9.20.0"
+  }
+}
